@@ -1,0 +1,6 @@
+import z from "zod";
+
+export const messageSchema = z.object({
+    message: z.string().min(10,{message:"Message must be atleast 10 chareter"}).max(300,{message:"Message must not be more then 300 chareter"})
+    
+})
